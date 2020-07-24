@@ -1,0 +1,75 @@
+ul {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 7rem 0 7rem;
+  padding: 0;
+}
+
+.card {
+  margin: 0;
+}
+
+.kittehImage {
+  height: auto;
+  width: 100%;
+}
+
+.kittehs {
+  border: 0.05rem solid rgb(224, 224, 224);
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #f2cf8d;
+  margin: 0.25rem 1rem 1.5rem 1rem;
+  padding: 0;
+}
+
+span {
+  font-weight: 600;
+  color: rgb(83, 83, 83);
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  color: rgb(116, 114, 114);
+  margin-bottom: 1rem;
+
+  .authors {
+    padding-right: 1rem;
+  }
+
+  .icon {
+    height: auto;
+    width: 1.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+@media (min-width: 1360px) {
+  .card {
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
